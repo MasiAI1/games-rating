@@ -18,7 +18,7 @@ async function makeRatingFile(path, array) {
                 ratingArray.push(obj);
             }
         });
-        fs.writeFile(path,JSON.stringify(ratingArray) , () =>{
+        await fs.writeFile(path,JSON.stringify(ratingArray) , () =>{
             console.log('Файл записан!')
         })
 }

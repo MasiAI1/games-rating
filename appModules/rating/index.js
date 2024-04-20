@@ -5,5 +5,5 @@ module.exports = {
     makeRatingFile,
     config,
     createRating,
-    updateRating
+    updateRating,
 }

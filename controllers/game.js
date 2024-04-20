@@ -1,7 +1,7 @@
 
 const fs = require('fs');
-const {getRandomGame} = require("../appModules/api/api-utils");
-function gameRouteController(res){
+const {getRandomGame} = require("../appModules/api");
+ function gameRouteController(res){
     fs.readFile('./dataset/rating.json', (err,ratingFile) =>{
         if (err){
             res.statusCode = 500;
